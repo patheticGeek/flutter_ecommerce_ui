@@ -40,7 +40,7 @@ AppBarTheme appBarTheme() {
     brightness: Brightness.light,
     centerTitle: true,
     iconTheme: IconThemeData(
-      color: Colors.black,
+      color: Color(0XFF888888),
     ),
     textTheme: TextTheme(
       headline6: TextStyle(
