@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ecommerce_ui/constants.dart';
 import 'package:flutter_ecommerce_ui/screens/forgot_password/forgot_password_screen.dart';
+import 'package:flutter_ecommerce_ui/screens/login_success_screen/login_success_screen.dart';
 import 'package:flutter_ecommerce_ui/widgets/custom_suffix_icon.dart';
 import 'package:flutter_ecommerce_ui/widgets/default_button.dart';
 import 'package:flutter_ecommerce_ui/widgets/form_error.dart';
@@ -97,6 +98,7 @@ class _SignFormState extends State<SignForm> {
   void submitForm() {
     if (_formKey.currentState.validate()) {
       _formKey.currentState.save();
+      Navigator.pushNamed(context, LoginSuccessScreen.routeName);
     }
   }
 
